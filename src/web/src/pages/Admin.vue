@@ -23,9 +23,7 @@
       </a>
     </div>
 
-    <b-modal id="csvModal" title="Import Courses via CSV" size="xl">
-      <UploadCsv />
-    </b-modal>
+    <UploadCsv />
     <b-modal id="editSemestersModal" title="Edit Semesters" size="xl">
       <EditSemesters />
     </b-modal>
