@@ -1,17 +1,19 @@
 <template>
-  <b-modal id="csvModal" title="Import Courses via CSV" size="xl">
+  <b-modal id="csvModal" size="xl">
+    <div slot="modal-header" class="header">
+      <div />
+      Upload CSV
+      </div>
     <b-container>
       <section id="import-data">
-        <h2>Import Data</h2>
-        <form @submit.prevent="onSubmit" class="form-group">
+        <form @submit.prevent="onSubmit" id="upload-form" class="form-group">
           <div class="input-group">
             <label>
-              Upload CSV file
               <input type="file" name="file" class="form-control-file" />
             </label>
             <br />
           </div>
-          <div class="input-group">
+          <div class="input-group" id="options">
             <label>
               <input type="checkbox" name="isPubliclyVisible" checked />
               Make Public
@@ -21,8 +23,9 @@
       </section>
       <b-spinner v-show="loading" />
     </b-container>  
-    <div slot="modal-footer">
-      <b-button variant="success" >Submit</b-button>
+    <div slot="modal-footer" class="footer">
+      <button class="btn btn-success" @click="$bvModal.hide('csvModal')">Cancel</button>
+      <button form="upload-form" class="btn btn-success">Submit</button>
     </div>
   </b-modal>
 </template>
@@ -95,4 +98,30 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+  #csvModal {
+    text-align: center;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #options {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+</style>
