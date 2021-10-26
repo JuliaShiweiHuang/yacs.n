@@ -42,3 +42,18 @@ You should be able to access @ `localhost`
 In `localhost/admin` submit your school's courses by CSV and you're ready to schedule!
 
 For schema see /rpi_data/summer-2020.csv as an example
+
+**3. Different API Routes
+Different API Routes
+API is up
+https://yacs.cs.rpi.edu/api/
+
+Get Class:
+Https://yacs.cs.rpi.edu/api/class?semester={}&search={}
+
+Get department:
+https://yacs.cs.rpi.edu/api/department
+
+Get semester:
+https://yacs.cs.rpi.edu/api/semester
+
