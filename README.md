@@ -43,7 +43,7 @@ In `localhost/admin` submit your school's courses by CSV and you're ready to sch
 
 For schema see /rpi_data/summer-2020.csv as an example
 
-**3. Different API Routes
+**3. Different API Routes**
 
 API is up
 https://yacs.cs.rpi.edu/api/
