@@ -57,3 +57,11 @@ https://yacs.cs.rpi.edu/api/department
 Get semester:
 https://yacs.cs.rpi.edu/api/semester
 
+Get semester info: 
+https://yacs.cs.rpi.edu/api/semesterInfo
+
+Get default semester: 
+https://yacs.cs.rpi.edu/api/defaultsemester
+
+
+
